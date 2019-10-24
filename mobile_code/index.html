@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />		<!--κωδικοποίηση-->
+<title>Ελληνική Ομάδα Διάσωσης - Παράρτημα Σάμου</title>	<!--τίτλος σελίδας-->
+<meta name="viewport" content="width=device-width, initial-scale=1" />	<!--ετικέτα βελτιστοποίησης για τα κινητά-->
+<link rel="stylesheet" href="css/all.min.css" />		<!--css αρχεία-->
+<link rel="stylesheet" href="css/w3pro.css" />
+<link rel="stylesheet" href="css/w3-theme-teal.css" />
+</head>
+
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">			<!--το μενού-->
+<div class="w3-container w3-theme">
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">&times;</span>
+  <br>
+  <div class="w3-padding w3-center">
+    <img class="w3-circle" src="images\image1.jpg" alt="avatar" style="width:75%">
+  </div>
+</div>
+<a class="w3-bar-item w3-button" href="#"><i class="fas fa-fire"></i> Πυρκαγιές</a>
+<a class="w3-bar-item w3-button" href="#"><i class="fas fa-water"></i> Πλημμύρες</a>
+<a class="w3-bar-item w3-button" href="#"><i class="fab fa-sith"></i> Σεισμοί</a>
+<a class="w3-bar-item w3-button" href="#"><i class="fas fa-mountain"></i> Κατολισθήσεις</a>
+<a class="w3-bar-item w3-button" onclick= closeSidebar() href="#my-footer"><i class="fas fa-address-book"></i> Επικοινωνία</a>	<!--αν το πατήσω κλείνει το menu και πάει στο footer που είναι οι πληροφορίες-->
+</nav>
+
+<header class="w3-bar w3-card w3-theme">		<!--επικεφαλίδα-->
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+	<img class="w3-circle" src="images\logo.png" style="width:15%" align="left">
+  <h1 class="w3-bar-item">Ελληνική Ομάδα Διάσωσης</h1>
+</header>
+
+
+<div class="w3-cell-row">			<!--το κυρίως content-->
+  <div class="w3-cell" style="width:30%">
+    <img class="w3-circle" src="images\wildfire.png" style="width:100%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>Πρόβλεψη Κινδύνου Πυρκαγιάς</h3>
+    <p>Πράσινο: Χαμηλή Πιθανότητα <br>
+	Κίτρινο: Μέτρια Πιθανότητα		<br>
+	Κόκκινο: Υψηλή Πιθανότητα - Κατάσταση Κινδύνου
+	</p>
+	<meter min="0" max="100" low="25" high="75" optimum="0" value="50"></meter>		<!--μια μετρική της html5 -->
+  </div>
+</div>
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+    <img class="w3-circle" src="images\firemen.png" style="width:100%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>Κατάσταση Ετοιμότητας</h3>
+    <p>Πράσινο: Επιφυλακή	<br>
+	Κίτρινο: Πλήρη Ετοιμότητα	<br>
+	Κόκκινο: Επιχείρηση σε εξέλιξη
+	</p>
+	<meter min="0" max="100" low="25" high="75" optimum="0" value="76"></meter>
+  </div>
+</div>
+<div class="w3-container">
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell w3-container">
+    <h3>Εκπαίδευση</h3>
+    <p>Η συνεχής εκπαίδευση και η συμμετοχή σε σεμινάρια είναι αυτά που βοηθούν όλα τα μέλη της ομάδας να αποκτήσουν τις απαραίτητες γνώσεις και δεξιότητες, για τη συμμετοχή τους στις δράσεις της ομάδας.</p>
+	<p>Η Ε.Ο.Δ. ενημερώνεται συνεχώς για τις εξελίξεις που αφορούν τους τομείς δράσης της και για το λόγο αυτό παρακολουθεί εκπαιδεύσεις και συνέδρια σε εθνικό και διεθνές επίπεδο. Όλα τα μέλη της εκπαιδεύονται τόσο σε θεωρητικό επίπεδο όσο και σε πρακτικό.</p>
+  </div>
+</div>  
+<hr>
+
+
+<footer id="my-footer" class="w3-container w3-theme w3-margin-top">		<!--footer-->
+  <h3>ΕΟΔ Σάμου</h3>
+  <p>Θεμ. Σοφούλη 42, Καρλοβάσι Σάμου, τηλ. 2273087325, email: info@eodsamos.gr</p>
+</footer>
+
+<script>					<!--απλά scripts για το μενού-->
+closeSidebar();
+function openSidebar() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
